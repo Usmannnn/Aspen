@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		562C661D2ACDE70500B118E5 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C661C2ACDE70500B118E5 /* TabBar.swift */; };
+		562C66242ACDEE2A00B118E5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C66232ACDEE2A00B118E5 /* Home.swift */; };
+		562C66262ACDF0FE00B118E5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C66252ACDF0FE00B118E5 /* SearchBar.swift */; };
+		565EE2982ACED08B00C3C570 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565EE2972ACED08B00C3C570 /* Categories.swift */; };
+		565EE29A2ACED13F00C3C570 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565EE2992ACED13F00C3C570 /* Category.swift */; };
+		565EE29C2ACEE32500C3C570 /* Populars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565EE29B2ACEE32500C3C570 /* Populars.swift */; };
+		565EE29E2ACEE5CC00C3C570 /* Recommended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565EE29D2ACEE5CC00C3C570 /* Recommended.swift */; };
 		56A798472AC99ED000BDD589 /* AspenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A798462AC99ED000BDD589 /* AspenApp.swift */; };
 		56A798492AC99ED000BDD589 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A798482AC99ED000BDD589 /* ContentView.swift */; };
 		56A7984B2AC99ED100BDD589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A7984A2AC99ED100BDD589 /* Assets.xcassets */; };
 		56A7984E2AC99ED100BDD589 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A7984D2AC99ED100BDD589 /* Preview Assets.xcassets */; };
+		56A798562AC9A95300BDD589 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A798552AC9A95200BDD589 /* SplashScreen.swift */; };
+		56C9152F2ACC9457003104B7 /* ButtonBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9152E2ACC9457003104B7 /* ButtonBasic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		562C661C2ACDE70500B118E5 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		562C66232ACDEE2A00B118E5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		562C66252ACDF0FE00B118E5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		565EE2972ACED08B00C3C570 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		565EE2992ACED13F00C3C570 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		565EE29B2ACEE32500C3C570 /* Populars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Populars.swift; sourceTree = "<group>"; };
+		565EE29D2ACEE5CC00C3C570 /* Recommended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommended.swift; sourceTree = "<group>"; };
 		56A798432AC99ED000BDD589 /* Aspen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aspen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A798462AC99ED000BDD589 /* AspenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspenApp.swift; sourceTree = "<group>"; };
 		56A798482AC99ED000BDD589 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		56A7984A2AC99ED100BDD589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56A7984D2AC99ED100BDD589 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56A798552AC9A95200BDD589 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		56C9152E2ACC9457003104B7 /* ButtonBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBasic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,8 @@
 		56A798452AC99ED000BDD589 /* Aspen */ = {
 			isa = PBXGroup;
 			children = (
+				56C9152D2ACC941D003104B7 /* Components */,
+				56C9152C2ACC9410003104B7 /* Screens */,
 				56A798462AC99ED000BDD589 /* AspenApp.swift */,
 				56A798482AC99ED000BDD589 /* ContentView.swift */,
 				56A7984A2AC99ED100BDD589 /* Assets.xcassets */,
@@ -65,6 +85,29 @@
 				56A7984D2AC99ED100BDD589 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56C9152C2ACC9410003104B7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				56A798552AC9A95200BDD589 /* SplashScreen.swift */,
+				562C66232ACDEE2A00B118E5 /* Home.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		56C9152D2ACC941D003104B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				56C9152E2ACC9457003104B7 /* ButtonBasic.swift */,
+				562C661C2ACDE70500B118E5 /* TabBar.swift */,
+				562C66252ACDF0FE00B118E5 /* SearchBar.swift */,
+				565EE2972ACED08B00C3C570 /* Categories.swift */,
+				565EE2992ACED13F00C3C570 /* Category.swift */,
+				565EE29B2ACEE32500C3C570 /* Populars.swift */,
+				565EE29D2ACEE5CC00C3C570 /* Recommended.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +180,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562C66262ACDF0FE00B118E5 /* SearchBar.swift in Sources */,
+				565EE29E2ACEE5CC00C3C570 /* Recommended.swift in Sources */,
+				565EE2982ACED08B00C3C570 /* Categories.swift in Sources */,
+				56A798562AC9A95300BDD589 /* SplashScreen.swift in Sources */,
 				56A798492AC99ED000BDD589 /* ContentView.swift in Sources */,
+				562C661D2ACDE70500B118E5 /* TabBar.swift in Sources */,
+				565EE29A2ACED13F00C3C570 /* Category.swift in Sources */,
+				56C9152F2ACC9457003104B7 /* ButtonBasic.swift in Sources */,
+				565EE29C2ACEE32500C3C570 /* Populars.swift in Sources */,
+				562C66242ACDEE2A00B118E5 /* Home.swift in Sources */,
 				56A798472AC99ED000BDD589 /* AspenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
