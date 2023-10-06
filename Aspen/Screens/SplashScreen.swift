@@ -34,7 +34,7 @@ struct SplashScreen: View {
                     }
                     
                     
-                    NavigationLink(destination: Home()){
+                    NavigationLink(destination: Home().navigationBarBackButtonHidden()){
                         Text("Explore")
                             .font(.title3)
                             .foregroundColor(.white)
