@@ -55,7 +55,7 @@ struct PopularItem: View {
     
     var body: some View {
         
-        NavigationLink(destination: Detail(index: index)){
+        NavigationLink(destination: Detail(index: index).navigationBarBackButtonHidden()){
                 ZStack{
                     Image(uiImage: images[index])
                         .frame(width: 188,height: 240)
