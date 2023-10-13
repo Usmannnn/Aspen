@@ -13,7 +13,9 @@ struct Populars: View {
             Text("Popular")
                 .font(.system(size: 22))
                 .bold()
+            
             Spacer()
+            
             Button{
                 
             } label: {
@@ -22,10 +24,11 @@ struct Populars: View {
             }
         }
         .padding()
+        
         ScrollView(.horizontal,showsIndicators: false){
             PopularView()
         }
-       
+        
     }
 }
 
@@ -35,27 +38,30 @@ struct Populars: View {
 
 struct PopularView: View {
     var body: some View {
+            HStack{
+                    PopularItem(index: 0)
+                    PopularItem(index: 1)
+                    PopularItem(index: 2)
+            }
+            .padding(.horizontal)
+       
+    }
+}
+
+struct PopularItem: View {
+    
+    let images = [UIImage.image1,UIImage.image2,UIImage.image1]
+    var index: Int
+    
+    var body: some View {
         
-        HStack{
-            ZStack{
-                Image(uiImage: UIImage.image1)
-                    .frame(width: 188,height: 240)
-            }
-            .cornerRadius(16)
-            
-            ZStack{
-                Image(uiImage: UIImage.image2)
-                    .frame(width: 188,height: 240)
-            }
-            .cornerRadius(16)
-            
-            ZStack{
-                Image(uiImage: UIImage.image1)
-                    .resizable()
-                    .frame(width: 188,height: 240)
-            }
-            .cornerRadius(16)
+        NavigationLink(destination: Detail(index: index)){
+                ZStack{
+                    Image(uiImage: images[index])
+                        .frame(width: 188,height: 240)
+                }
+                .cornerRadius(16)
+           
         }
-        .padding(.horizontal)
     }
 }

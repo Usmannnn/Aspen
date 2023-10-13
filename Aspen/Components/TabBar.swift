@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct TabBar: View {
+    
+    @State var selected = 0
+    
+    
     var body: some View {
-        ZStack(){
+        TabView(selection: $selected) {
+            Home().tabItem { Label("Home", systemImage: "house") }.tag(0)
+            Text("Profile").tabItem { Label("Profile", systemImage: "person") }.tag(1)
+        }
+        .onChange(of: selected) { oldValue, newValue in
+            selected = newValue
         }
     }
 }
